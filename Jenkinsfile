@@ -12,6 +12,7 @@ pipeline {
             steps {
                 sh 'mvn clean -f backend'
                 echo 'downloading github project...'
+                git branch: 'main', credentialsId: 'Sarinayy', url: 'https://github.com/Sarinayy/Assigment-2-main.git'
             }
         }
 
